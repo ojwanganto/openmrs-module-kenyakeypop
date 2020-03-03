@@ -7,12 +7,12 @@
 %>
 
 <div class="ke-page-sidebar">
-    ${ ui.includeFragment("kenyaemr", "patient/patientSearchForm", [ defaultWhich: "checked-in" ]) }
-
+    ${ ui.includeFragment("kenyakeypop", "peerSearch/peerSearchForm", [ defaultWhich: "checked-in" ]) }
 </div>
 
 <div class="ke-page-content">
-    ${ ui.includeFragment("kenyaemr", "patient/patientSearchResults", [ pageProvider: "kenyaemr", page: "clinician/clinicianViewPatient" ]) }
+    ${ ui.includeFragment("kenyakeypop", "peerSearch/peerSearchResults", [ pageProvider: "kenyakeypop", page: "peerCalender/peerViewClients" ]) }
+
 </div>
 
 <script type="text/javascript">
